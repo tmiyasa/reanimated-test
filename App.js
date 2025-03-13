@@ -3,6 +3,7 @@ import Animated, {
   withTiming,
   useAnimatedStyle,
   Easing,
+  withSpring,
 } from "react-native-reanimated";
 import { View, Button } from "react-native";
 
@@ -16,7 +17,8 @@ export default function AnimatedStyleUpdateExample(props) {
 
   const style = useAnimatedStyle(() => {
     return {
-      width: withTiming(randomWidth.value, config),
+      // width: withTiming(randomWidth.value, config),
+      width: withSpring(randomWidth.value, config),
     };
   });
 

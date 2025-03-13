@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@expo/metro-runtime": "~4.0.0",
     "expo": "^52.0.16",
     "expo-status-bar": "~2.0.0",
